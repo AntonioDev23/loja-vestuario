@@ -1,6 +1,6 @@
 .home-presentation {
-  background-color: #1e40af; /* cor de destaque */
-  color: white;
+  background-color: #FFDEAD; /* cor de destaque */
+  color: #8B008B	;
   min-height: 100vh; /* ocupa toda a tela */
   display: flex;
   justify-content: center;
@@ -10,4 +10,8 @@
 
 .presentation-content {
   max-width: 600px;
+  font-size: 3rem;
+  font-weight: bold;
 }
+
+
