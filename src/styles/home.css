@@ -1,0 +1,13 @@
+.home-presentation {
+  background-color: #1e40af; /* cor de destaque */
+  color: white;
+  min-height: 100vh; /* ocupa toda a tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.presentation-content {
+  max-width: 600px;
+}
