@@ -1,26 +1,21 @@
 import React from 'react';
-import './styles/App.css';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Bem-vindo ao meu site!</h1>
-      </header>
+      {/* Página inicial com fundo diferenciado */}
+      <Home />
 
-      <main>
-        {/* Aqui vão suas páginas ou componentes */}
-        <p>Conteúdo principal do site.</p>
-      </main>
-
-      <footer>
-        <p>© 2025 Antônio Ricardo da Silva Neto</p>
-      </footer>
+      {/* Futuras páginas padrão, fundo branco */}
+      {/* <About /> */}
+      {/* <Contact /> */}
     </div>
   );
 }
 
 export default App;
+
 
 
 
