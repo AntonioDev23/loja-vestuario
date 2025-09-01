@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: transparent; /* Mantém fundo do Hero */
+  font-family: Arial, sans-serif;
+}
+
+.navbar .logo img {
+  width: 120px;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar .menu li {
+  cursor: pointer;
+  color: #8B008B;
+  font-weight: 500;
+}
+
+.navbar-icons input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.navbar-icons button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  background-color: #8B008B;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-icons button:hover {
+  background-color: #6A006A;
+}
