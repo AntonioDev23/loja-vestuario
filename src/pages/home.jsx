@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Home.css';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
+import { initScrollFade } from '../utils/scrollFade';
 
 function Home() {
+  // Inicializa animações de fade-in ao rolar a página
+  useEffect(() => {
+    initScrollFade();
+  }, []);
+
   return (
     <div className="home-page">
       <Navbar />
@@ -18,7 +24,7 @@ function Home() {
       />
 
       {/* Seção de destaques */}
-      <section className="highlights">
+      <section className="highlights fade-in">
         <div className="highlight-card">
           <h3>Nova Coleção</h3>
           <p>Peças exclusivas que definem tendências.</p>
@@ -33,11 +39,18 @@ function Home() {
         </div>
       </section>
 
-      <Newsletter />
+      {/* Newsletter */}
+      <section className="newsletter fade-in">
+        <Newsletter />
+      </section>
 
-      <Footer />
+      {/* Footer */}
+      <footer className="fade-in">
+        <Footer />
+      </footer>
     </div>
   );
 }
 
 export default Home;
+
