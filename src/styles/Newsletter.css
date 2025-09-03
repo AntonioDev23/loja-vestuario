@@ -1,8 +1,16 @@
 .newsletter {
-  background-color: #FFDEAD;
+  background: linear-gradient(
+    180deg,
+    #FFE4B5 0%,   /* bege claro */
+    #FFD39B 50%,  /* bege médio */
+    #FFB84D 100%  /* dourado mais intenso */
+  );
+  padding: 3rem 1rem;
   text-align: center;
-  padding: 50px 20px;
+  border-radius: 12px;
+  color: #8B008B; /* mantém o roxo das letras */
 }
+
 
 .newsletter h2 {
   color: #8B008B;

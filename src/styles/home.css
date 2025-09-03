@@ -37,15 +37,16 @@
   font-family: 'Arial', sans-serif;
   color: #8B008B;
   background: linear-gradient(
-    180deg, 
-    #FFDEAD 0%,       /* bege mais claro no topo */
-    #F5DEB3 50%,      /* bege médio no meio */
-    #FFE4B5 100%      /* bege mais suave na parte inferior */
+    180deg,
+    #FFE4B5 0%,   /* bege claro */
+    #FFD39B 50%,  /* bege médio */
+    #FFB84D 100%  /* dourado mais intenso */
   );
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
 
 /* Home.css */
 .fade-in {
