@@ -1,41 +1,43 @@
-// src/pages/home.jsx
 import React from 'react';
 import '../styles/Home.css';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import ProductCard from '../components/ProductCard';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
-
-// Exemplo de produtos
-import prod1 from '../assets/prod1.png';
-import prod2 from '../assets/prod2.png';
-import prod3 from '../assets/prod3.png';
 
 function Home() {
   return (
     <div className="home-page">
-      {/* Cabeçalho */}
       <Navbar />
 
-      {/* Seção de apresentação */}
-      <Hero />
+      {/* Hero Fullscreen */}
+      <Hero
+        title="Moda, estilo e qualidade"
+        subtitle="Descubra nossa coleção exclusiva"
+        buttonText="Explorar Coleção"
+      />
 
-      {/* Seção de produtos */}
-      <section className="products-section">
-        <ProductCard image={prod1} name="Camisa Casual" price="79,90" />
-        <ProductCard image={prod2} name="Calça Jeans" price="129,90" />
-        <ProductCard image={prod3} name="Tênis Esportivo" price="199,90" />
+      {/* Seção de destaques */}
+      <section className="highlights">
+        <div className="highlight-card">
+          <h3>Nova Coleção</h3>
+          <p>Peças exclusivas que definem tendências.</p>
+        </div>
+        <div className="highlight-card">
+          <h3>Promoções</h3>
+          <p>Ofertas especiais para você renovar seu guarda-roupa.</p>
+        </div>
+        <div className="highlight-card">
+          <h3>Estilo & Dicas</h3>
+          <p>Inspire-se com looks modernos e elegantes.</p>
+        </div>
       </section>
 
-      {/* Newsletter */}
       <Newsletter />
 
-      {/* Rodapé */}
       <Footer />
     </div>
   );
 }
 
 export default Home;
-
