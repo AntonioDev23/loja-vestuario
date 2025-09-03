@@ -8,17 +8,18 @@
 
 .highlight-card {
   background: white;
-  padding: 1.5rem; /* menos padding */
+  padding: 1.5rem;
   border-radius: 12px;
   flex: 1;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: default;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .highlight-card:hover {
-  transform: translateY(-8px); /* animação mais sutil */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  background-color: #fff0f5; /* leve mudança de fundo */
 }
 
 .highlight-card h3 {
