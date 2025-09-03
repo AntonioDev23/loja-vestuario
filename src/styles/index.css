@@ -1,3 +1,8 @@
+/* index.css */
+
+/* Importa variáveis de cores */
+@import './styles/variables.css';
+
 /* Reset básico */
 * {
   margin: 0;
@@ -5,8 +10,45 @@
   box-sizing: border-box;
 }
 
+/* Estilos globais do body */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+  background: linear-gradient(
+    180deg,
+    var(--bege-claro) 0%,   /* topo */
+    var(--bege-medio) 50%,  /* meio */
+    var(--bege-escuro) 100%  /* final */
+  );
+  color: var(--roxo-letra);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Listas */
+ul {
+  list-style: none;
+}
+
+/* Imagens e vídeos */
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inputs e botões */
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* Containers gerais */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
