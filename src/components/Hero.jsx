@@ -1,12 +1,14 @@
 import React from 'react';
 import '../styles/Hero.css';
 
-function Hero() {
+function Hero({ title, subtitle, buttonText }) {
   return (
     <section className="hero">
-      <h1>Bem-vindo à Nossa Loja</h1>
-      <p>Confira nossas últimas coleções de moda!</p>
-      <button>Ver Produtos</button>
+      <div className="hero-overlay">
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
+        <button>{buttonText}</button>
+      </div>
     </section>
   );
 }
