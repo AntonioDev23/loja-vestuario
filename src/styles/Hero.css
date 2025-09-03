@@ -1,7 +1,6 @@
-/* Hero.css */
 .hero {
-  height: 100vh;
-  background-image: url('https://via.placeholder.com/1920x1080'); /* imagem temporária */
+  height: 75vh; /* antes era 100vh */
+  background-image: url('https://via.placeholder.com/1920x1080'); 
   background-size: cover;
   background-position: center;
   position: relative;
@@ -12,28 +11,28 @@
 
 .hero-overlay {
   text-align: center;
-  background-color: rgba(255, 222, 173, 0.7);
-  padding: 3rem 2rem;
+  background-color: rgba(255, 222, 173, 0.8); /* mais visível */
+  padding: 2rem 1.5rem; /* menos padding */
   border-radius: 16px;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem; /* um pouco menor */
   margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  font-size: 1.2rem; /* ajustado */
+  margin-bottom: 1.5rem;
 }
 
 .hero button {
   background-color: #8B008B;
   color: white;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.8rem;
   border: none;
   border-radius: 8px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }

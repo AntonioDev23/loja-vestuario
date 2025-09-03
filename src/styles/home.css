@@ -1,22 +1,14 @@
-/* Home.css */
-.home-page {
-  font-family: 'Arial', sans-serif;
-  color: #8B008B;
-  background-color: #FFDEAD;
-}
-
-/* Destaques */
 .highlights {
   display: flex;
   justify-content: space-around;
-  margin: 4rem auto;
+  margin: 2rem auto; /* antes era 4rem */
   max-width: 1200px;
-  gap: 2rem;
+  gap: 1.5rem; /* diminuiu o espaço entre os cards */
 }
 
 .highlight-card {
   background: white;
-  padding: 2rem;
+  padding: 1.5rem; /* menos padding */
   border-radius: 12px;
   flex: 1;
   text-align: center;
@@ -25,18 +17,26 @@
 }
 
 .highlight-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px); /* animação mais sutil */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .highlight-card h3 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
 }
 
 .highlight-card p {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
-
+/* Ajuste geral do home-page para reduzir distância do footer */
+.home-page {
+  font-family: 'Arial', sans-serif;
+  color: #8B008B;
+  background-color: #FFDEAD;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
