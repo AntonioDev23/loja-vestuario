@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './pages/Home';
-import './index.css'; // importa o CSS global
+import './styles/index.css'; // caminho correto para o CSS global
 
 function App() {
   return (
@@ -16,5 +16,6 @@ function App() {
 }
 
 export default App;
+
 
 

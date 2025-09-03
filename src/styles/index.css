@@ -1,7 +1,7 @@
 /* index.css */
 
 /* Importa variáveis de cores */
-@import './styles/variables.css';
+@import './variables.css';
 
 /* Reset básico */
 * {
@@ -13,13 +13,8 @@
 /* Estilos globais do body */
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(
-    180deg,
-    var(--bege-claro) 0%,   /* topo */
-    var(--bege-medio) 50%,  /* meio */
-    var(--bege-escuro) 100%  /* final */
-  );
-  color: var(--roxo-letra);
+  background: linear-gradient(180deg, var(--bege-claro) 0%, var(--bege-medio) 50%, var(--bege-escuro) 100%);
+  color: var(--roxo);
 }
 
 /* Links */
@@ -28,25 +23,19 @@ a {
   color: inherit;
 }
 
-/* Listas */
-ul {
-  list-style: none;
+/* Botões */
+button {
+  cursor: pointer;
+  font-family: inherit;
 }
 
-/* Imagens e vídeos */
-img, video {
+/* Imagens responsivas */
+img {
   max-width: 100%;
   display: block;
 }
 
-/* Inputs e botões */
-input, button, select, textarea {
-  font-family: inherit;
-  font-size: 100%;
-  margin: 0;
-}
-
-/* Containers gerais */
+/* Container central */
 .container {
   width: 90%;
   max-width: 1200px;
