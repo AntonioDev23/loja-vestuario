@@ -6,8 +6,9 @@
   text-align: center;
   padding: 5rem 1rem;
   min-height: 80vh;
-  background: transparent; /* não sobrescreve o gradiente da home */
+  background: transparent; /* flui com o gradiente da home */
 }
+
 
 
 .hero-overlay {

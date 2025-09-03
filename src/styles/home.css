@@ -34,18 +34,18 @@
 
 /* Ajuste geral do home-page para reduzir distância do footer */
 .home-page {
-  font-family: 'Arial', sans-serif;
-  color: #8B008B;
   background: linear-gradient(
     180deg,
-    #FFE4B5 0%,    /* claro no topo */
-    #FFD39B 50%,   /* médio no meio */
-    #FFB84D 100%   /* escuro no fim */
+    var(--bege-claro) 0%,
+    var(--bege-medio) 50%,
+    var(--bege-escuro) 100%
   );
+  color: var(--roxo-letra);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
+
 
 
 
