@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './pages/Home';
+import './index.css'; // importa o CSS global
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       {/* Página inicial com fundo diferenciado */}
       <Home />
 
-      {/* Futuras páginas padrão, fundo branco */}
+      {/* Futuras páginas padrão */}
       {/* <About /> */}
       {/* <Contact /> */}
     </div>
@@ -15,7 +16,5 @@ function App() {
 }
 
 export default App;
-
-
 
 

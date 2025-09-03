@@ -1,14 +1,11 @@
 .newsletter {
-  background: linear-gradient(
-    180deg,
-    #FFE4B5 0%,   /* bege claro */
-    #FFD39B 50%,  /* bege médio */
-  );
   padding: 3rem 1rem;
   text-align: center;
   border-radius: 12px;
-  color: #8B008B; /* mantém o roxo das letras */
+  color: var(--roxo-letra);
+  background: transparent; /* flui com o gradiente da home */
 }
+
 
 
 .newsletter h2 {
