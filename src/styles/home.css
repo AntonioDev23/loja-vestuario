@@ -38,14 +38,15 @@
   color: #8B008B;
   background: linear-gradient(
     180deg,
-    #FFE4B5 0%,   /* bege claro */
-    #FFD39B 50%,  /* bege médio */
-    #FFB84D 100%  /* dourado mais intenso */
+    #FFE4B5 0%,    /* claro no topo */
+    #FFD39B 50%,   /* médio no meio */
+    #FFB84D 100%   /* escuro no fim */
   );
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
 
 
 /* Home.css */
