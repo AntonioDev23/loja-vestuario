@@ -19,10 +19,17 @@ function Navbar() {
 
       <div className="navbar-icons">
         <input type="text" placeholder="Buscar..." />
+
+        {/* Link para a página de login */}
         <Link to="/login" className="login-link">
           <button>Login</button>
         </Link>
-        <button>Carrinho</button>
+
+        {/* Link para a página do carrinho */}
+        <Link to="/carrinho">
+          <button>Carrinho</button>
+        </Link>
+
       </div>
     </nav>
   );

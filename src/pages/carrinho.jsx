@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import '../styles/Cart.css';
+import '../styles/carrinho.css';
 
 function Cart() {
   return (

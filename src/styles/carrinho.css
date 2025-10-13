@@ -1,23 +1,29 @@
+/* Cart.css */
+
 .cart-page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: #FFDEAD; /* mesma cor/bege do fundo do site */
 }
 
 .cart-main {
   flex: 1;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
   text-align: center;
-  background-color: var(--bege-claro); /* usa a cor de fundo do site */
+  color: #333;
 }
 
 .cart-main h1 {
-  font-size: 2rem;
-  color: var(--roxo);
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .cart-main p {
   font-size: 1.2rem;
-  color: #333;
+  color: #555;
 }
