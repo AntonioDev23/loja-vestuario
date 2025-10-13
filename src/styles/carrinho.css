@@ -1,0 +1,23 @@
+.cart-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-main {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--bege-claro); /* usa a cor de fundo do site */
+}
+
+.cart-main h1 {
+  font-size: 2rem;
+  color: var(--roxo);
+  margin-bottom: 1rem;
+}
+
+.cart-main p {
+  font-size: 1.2rem;
+  color: #333;
+}
