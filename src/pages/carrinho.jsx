@@ -38,7 +38,7 @@ function Carrinho() {
 
         {cartItems.length === 0 ? (
           <div className="cart-empty">
-            <ShoppingCart className="cart-icon" size={80} />
+            <ShoppingCart className="cart-icon animated" size={80} />
             <p>Seu carrinho está vazio.</p>
           </div>
         ) : (
