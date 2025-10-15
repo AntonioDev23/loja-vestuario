@@ -17,8 +17,9 @@
 .cart-main h1 {
   text-align: center;
   margin-bottom: 2rem;
-  color: var(--roxo);
+  color: black;
 }
+
 
 .cart-items {
   display: flex;
@@ -98,8 +99,22 @@
   padding: 50px 0;
 }
 
-.cart-icon {
-  color: #333;
-  opacity: 0.7;
+.cart-empty p {
+  color: #333; /* você pode ajustar para preto: #000 */
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
+
+/* Ícone animado do carrinho */
+.cart-icon {
+  color: black;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* Efeito de pulo suave ao passar o mouse */
+.cart-icon.animated:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+
 
