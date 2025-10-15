@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../styles/Carrinho.css';
+import { ShoppingCart } from 'lucide-react'; // ícone adicionado
 
 function Carrinho() {
-  // Estado inicial: carrinho vazio
   const [cartItems, setCartItems] = useState([]);
 
   const removeItem = (index) => {
@@ -27,7 +27,6 @@ function Carrinho() {
     }
   };
 
-  // Calcula total
   const total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   return (
@@ -38,7 +37,10 @@ function Carrinho() {
         <h1>Meu Carrinho</h1>
 
         {cartItems.length === 0 ? (
-          <p>Seu carrinho está vazio.</p>
+          <div className="cart-empty">
+            <ShoppingCart className="cart-icon" size={80} />
+            <p>Seu carrinho está vazio.</p>
+          </div>
         ) : (
           <div className="cart-items">
             {cartItems.map((item, index) => (
