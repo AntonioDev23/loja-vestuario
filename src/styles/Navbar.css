@@ -94,3 +94,14 @@
 .search-btn:hover {
   background-color: #6A006A;
 }
+
+.navbar-icons .icon {
+  color: #8B008B;       /* mesma cor que os textos do menu */
+  margin-left: 15px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.navbar-icons .icon:hover {
+  transform: scale(1.2); /* efeito de zoom ao passar o mouse */
+}
