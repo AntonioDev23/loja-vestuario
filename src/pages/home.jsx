@@ -18,7 +18,7 @@ function Home() {
 
       {/* Hero Fullscreen */}
       <Hero
-        title="Moda, estilo e qualidade"
+        title="MODA, ESTILO E QUALIDADE"
         subtitle="Descubra nossa coleção exclusiva"
         buttonText="Explorar Coleção"
       />
