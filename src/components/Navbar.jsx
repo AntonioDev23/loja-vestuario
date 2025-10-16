@@ -20,7 +20,6 @@ function Navbar() {
         <li><Link to="/colecoes">Coleções</Link></li>
       </ul>
 
-
         {/* Ícones à direita */}
         <div className="navbar-icons">
           <Link to="/login">

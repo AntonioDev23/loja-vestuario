@@ -4,6 +4,7 @@ import './styles/index.css'; // mantém o CSS global
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Carrinho from './pages/carrinho'; // importando a página do carrinho
+import Produtos from './pages/Produtos';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/carrinho" element={<Carrinho />} /> {/* rota do carrinho */}
-          {/* Futuras páginas podem ser adicionadas aqui */}
+          <Route path="/produtos" element={<Produtos />} /> {/* rota do produtos */}
         </Routes>
       </div>
     </Router>
@@ -21,5 +22,3 @@ function App() {
 }
 
 export default App;
-
-
