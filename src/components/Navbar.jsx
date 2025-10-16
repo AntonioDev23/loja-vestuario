@@ -14,11 +14,12 @@ function Navbar() {
         </div>
 
         {/* Menu central */}
-        <ul className="menu">
-          <li><Link to="/">Home</Link></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><Link to="/colecoes">Coleções</Link></li>
-        </ul>
+      <ul className="menu">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/produtos">Produtos</Link></li>
+        <li><Link to="/colecoes">Coleções</Link></li>
+      </ul>
+
 
         {/* Ícones à direita */}
         <div className="navbar-icons">
