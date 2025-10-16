@@ -11,10 +11,11 @@
 /* Linha principal: logo, menu e ícones */
 .navbar-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* centraliza o conteúdo horizontalmente */
   align-items: center;
-  width: 100%;
+  gap: 200px; /* aproxima ou afasta o logo, menu e ícones */
 }
+
 
 /* Logo */
 .navbar .logo img {
@@ -69,7 +70,7 @@
   display: flex;
   justify-content: center;
   margin-top: 15px;
-  width: 70%;
+  width: 60%;
 }
 
 .search-input {
