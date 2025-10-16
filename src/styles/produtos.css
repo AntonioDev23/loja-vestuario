@@ -1,0 +1,80 @@
+.produtos-main {
+  text-align: center;
+  padding: 50px 5%;
+}
+
+.produtos-main h1 {
+  color: #8B008B;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* Botões de filtro */
+.filtros {
+  margin-bottom: 30px;
+}
+
+.filtros button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: 1px solid #8B008B;
+  background: none;
+  color: #8B008B;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filtros button:hover {
+  background-color: #8B008B;
+  color: white;
+}
+
+/* Grade de produtos */
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.produto-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.produto-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.produto-card h3 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.produto-card p {
+  color: #555;
+  font-weight: bold;
+}
+
+.produto-card button {
+  margin-top: 10px;
+  background-color: #8B008B;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.produto-card button:hover {
+  background-color: #6A006A;
+}
