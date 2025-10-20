@@ -78,3 +78,14 @@
 .produto-card button:hover {
   background-color: #6A006A;
 }
+
+/* Garante que o footer fique sempre no fim da tela */
+.produtos-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.produtos-main {
+  flex: 1;
+}
