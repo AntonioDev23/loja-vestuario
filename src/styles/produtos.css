@@ -79,13 +79,13 @@
   background-color: #6A006A;
 }
 
-/* Garante que o footer fique sempre no fim da tela */
 .produtos-page {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; /* garante que a página tenha a altura total da tela */
 }
 
 .produtos-main {
-  flex: 1;
+  flex: 1; /* faz o main ocupar o espaço restante */
+  padding: 20px;
 }
