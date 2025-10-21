@@ -9,6 +9,7 @@ import calcaJeans from '../assets/imagens/calça-jeans.jpeg';
 import camisaEstampada from '../assets/imagens/camisa-estampada.png';
 import camisaSimples from '../assets/imagens/camisa-simples.jpg';
 import jaquetaJeans from '../assets/imagens/jaqueta-jeans.jpeg';
+import tenisBranco from '../assets/imagens/tenis-branco.jpg'; // imagem do tênis
 
 function Produtos() {
   const [categoriaSelecionada, setCategoriaSelecionada] = useState('todos');
@@ -19,6 +20,7 @@ function Produtos() {
     { id: 3, nome: 'Boné Preto', preco: 59.90, categoria: 'acessorios', imagem: bone },
     { id: 4, nome: 'Camiseta Estampada', preco: 69.90, categoria: 'camisas', imagem: camisaEstampada },
     { id: 5, nome: 'Jaqueta Jeans', preco: 189.90, categoria: 'casacos', imagem: jaquetaJeans },
+    { id: 6, nome: 'Tênis Branco', preco: 199.90, categoria: 'calcados', imagem: tenisBranco }
   ];
 
   const produtosFiltrados = categoriaSelecionada === 'todos'
@@ -39,7 +41,7 @@ function Produtos() {
           <button onClick={() => setCategoriaSelecionada('calcas')}>Calças</button>
           <button onClick={() => setCategoriaSelecionada('casacos')}>Casacos</button>
           <button onClick={() => setCategoriaSelecionada('acessorios')}>Acessórios</button>
-          <button onClick={() => setCategoriaSelecionada('calcados')}>Calçados</button> {}
+          <button onClick={() => setCategoriaSelecionada('calcados')}>Calçados</button>
         </div>
 
         {/* Grid de produtos */}
