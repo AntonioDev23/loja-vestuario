@@ -39,6 +39,7 @@ function Produtos() {
           <button onClick={() => setCategoriaSelecionada('calcas')}>Calças</button>
           <button onClick={() => setCategoriaSelecionada('casacos')}>Casacos</button>
           <button onClick={() => setCategoriaSelecionada('acessorios')}>Acessórios</button>
+          <button onClick={() => setCategoriaSelecionada('calcados')}>Calçados</button> {}
         </div>
 
         {/* Grid de produtos */}
