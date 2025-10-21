@@ -4,11 +4,11 @@ import Footer from '../components/Footer';
 import '../styles/Produtos.css';
 
 // Importando imagens locais (50 produtos)
-import produto1 from '../assets/imagens/produto1.jpg';
-import produto2 from '../assets/imagens/produto2.jpg';
-import produto3 from '../assets/imagens/produto3.jpg';
-import produto4 from '../assets/imagens/produto4.jpg';
-import produto5 from '../assets/imagens/produto5.jpg';
+import produto1 from '../assets/imagens/blazer.cinza.png';
+import produto2 from '../assets/imagens/blazer-preto.png';
+import produto3 from '../assets/imagens/bone-azul.png';
+import produto4 from '../assets/imagens/bone-cinza.png';
+import produto5 from '../assets/imagens/bone.png.jpg';
 import produto6 from '../assets/imagens/produto6.jpg';
 import produto7 from '../assets/imagens/produto7.jpg';
 import produto8 from '../assets/imagens/produto8.jpg';
