@@ -4,15 +4,15 @@ import Footer from '../components/Footer';
 import '../styles/Produtos.css';
 
 // Importando imagens locais (50 produtos)
-import produto1 from '../assets/imagens/blazer.cinza.png';
-import produto2 from '../assets/imagens/blazer-preto.png';
-import produto3 from '../assets/imagens/bone-azul.png';
-import produto4 from '../assets/imagens/bone-cinza.png';
-import produto5 from '../assets/imagens/bone.png.jpg';
-import produto6 from '../assets/imagens/produto6.jpg';
-import produto7 from '../assets/imagens/produto7.jpg';
-import produto8 from '../assets/imagens/produto8.jpg';
-import produto9 from '../assets/imagens/produto9.jpg';
+import produto1 from '../assets/imagens/camisa-estampada.png';
+import produto2 from '../assets/imagens/camisa-longa-cinza.png';
+import produto3 from '../assets/imagens/camisa-longa-preta.jpg';
+import produto4 from '../assets/imagens/camisa-polo-azul.png';
+import produto5 from '../assets/imagens/camisa-polo-vermelha.png';
+import produto6 from '../assets/imagens/camisa-regata-branca.png';
+import produto7 from '../assets/imagens/camisa-regata-branca.png';
+import produto8 from '../assets/imagens/camisa-social-azul.png';
+import produto9 from '../assets/imagens/camisa-social-branca.png';
 import produto10 from '../assets/imagens/produto10.jpg';
 import produto11 from '../assets/imagens/produto11.jpg';
 import produto12 from '../assets/imagens/produto12.jpg';
