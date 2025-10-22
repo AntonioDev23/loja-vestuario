@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import '../styles/Produtos.css';
 
 // Importando imagens locais (50 produtos)
-import produto1 from '../assets/imagens/camisa-estampada.png';
+import produto1 from '../assets/imagens/camisa-xadrez-vermelha.png';
 import produto2 from '../assets/imagens/camisa-longa-cinza.png';
 import produto3 from '../assets/imagens/camisa-longa-preta.jpg';
 import produto4 from '../assets/imagens/camisa-polo-azul.png';
@@ -13,7 +13,7 @@ import produto6 from '../assets/imagens/camisa-regata-branca.png';
 import produto7 from '../assets/imagens/camisa-regata-branca.png';
 import produto8 from '../assets/imagens/camisa-social-azul.png';
 import produto9 from '../assets/imagens/camisa-social-branca.png';
-import produto10 from '../assets/imagens/produto10.jpg';
+import produto10 from '../assets/imagens/camisa-xadrez-azul.jpg';
 import produto11 from '../assets/imagens/produto11.jpg';
 import produto12 from '../assets/imagens/produto12.jpg';
 import produto13 from '../assets/imagens/produto13.jpg';
