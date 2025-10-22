@@ -23,7 +23,7 @@ import produto16 from '../assets/imagens/calça-moletom-cinza.png';
 import produto17 from '../assets/imagens/calça-moletom-preta.png';
 import produto18 from '../assets/imagens/calça-social-cinza.png';
 import produto19 from '../assets/imagens/calça-social-preta.png';
-import produto20 from '../assets/imagens/produto20.jpg';
+import produto20 from '../assets/imagens/calça-jeans-clara.png';
 import produto21 from '../assets/imagens/produto21.jpg';
 import produto22 from '../assets/imagens/produto22.jpg';
 import produto23 from '../assets/imagens/produto23.jpg';
