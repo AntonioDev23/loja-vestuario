@@ -10,10 +10,10 @@ import produto3 from '../assets/imagens/camisa-longa-preta.jpg';
 import produto4 from '../assets/imagens/camisa-polo-azul.png';
 import produto5 from '../assets/imagens/camisa-polo-vermelha.png';
 import produto6 from '../assets/imagens/camisa-regata-branca.png';
-import produto7 from '../assets/imagens/camisa-regata-branca.png';
+import produto7 from '../assets/imagens/camisa-regata-preta.png';
 import produto8 from '../assets/imagens/camisa-social-azul.png';
-import produto9 from '../assets/imagens/camisa-social-branca.png';
-import produto10 from '../assets/imagens/camisa-xadrez-azul.jpg';
+import produto9 from '../assets/imagens/camisa-social-branca.jpg';
+import produto10 from '../assets/imagens/camisa-xadrez-azul.png';
 import produto11 from '../assets/imagens/calça-chino-marrom.png';
 import produto12 from '../assets/imagens/calça-chino-bege.png';
 import produto13 from '../assets/imagens/calça-jeans-escura.png';
@@ -41,78 +41,83 @@ import produto34 from '../assets/imagens/carteira-couro-preta.png';
 import produto35 from '../assets/imagens/cinto-marrom.png';
 import produto36 from '../assets/imagens/cinto-preto.png';
 import produto37 from '../assets/imagens/mochila-preta.png';
-import produto48 from '../assets/imagens/mochila-vermelha.png';
+import produto38 from '../assets/imagens/mochila-vermelha.png';
 import produto39 from '../assets/imagens/relogio-prata.png';
 import produto40 from '../assets/imagens/relogio-preto.png';
-import produto41 from '../assets/imagens/bota-marrom.jpg';
-import produto42 from '../assets/imagens/bota-preta.jpg';
-import produto43 from '../assets/imagens/chinelo-branco.jpg';
-import produto44 from '../assets/imagens/chinelo-preto.jpg';
+import produto41 from '../assets/imagens/bota-marrom.png';
+import produto42 from '../assets/imagens/bota-preta.png';
+import produto43 from '../assets/imagens/chinelo-branco.png';
+import produto44 from '../assets/imagens/chinelo-preto.png';
 import produto45 from '../assets/imagens/tenis-branco.jpg';
-import produto46 from '../assets/imagens/tenis-cinza.jpg';
-import produto47 from '../assets/imagens/tenis-preto.jpg';
-import produto48 from '../assets/imagens/produto48.jpg';
-import produto49 from '../assets/imagens/produto49.jpg';
-import produto50 from '../assets/imagens/produto50.jpg';
+import produto46 from '../assets/imagens/tenis-cinza.png';
+import produto47 from '../assets/imagens/tenis-preto.png';
+import produto48 from '../assets/imagens/sapato-social-branco.png';
+import produto49 from '../assets/imagens/sapato-social-marrom.png';
+import produto50 from '../assets/imagens/sapato-social-preto.png';
 
 function Produtos() {
   const [categoriaSelecionada, setCategoriaSelecionada] = useState('todos');
 
   const produtos = [
-    { id: 1, nome: 'Produto 1', preco: 49.90, categoria: 'camisas', imagem: produto1 },
-    { id: 2, nome: 'Produto 2', preco: 59.90, categoria: 'camisas', imagem: produto2 },
-    { id: 3, nome: 'Produto 3', preco: 69.90, categoria: 'camisas', imagem: produto3 },
-    { id: 4, nome: 'Produto 4', preco: 79.90, categoria: 'camisas', imagem: produto4 },
-    { id: 5, nome: 'Produto 5', preco: 89.90, categoria: 'camisas', imagem: produto5 },
-    { id: 6, nome: 'Produto 6', preco: 99.90, categoria: 'camisas', imagem: produto6 },
-    { id: 7, nome: 'Produto 7', preco: 109.90, categoria: 'camisas', imagem: produto7 },
-    { id: 8, nome: 'Produto 8', preco: 119.90, categoria: 'camisas', imagem: produto8 },
-    { id: 9, nome: 'Produto 9', preco: 129.90, categoria: 'camisas', imagem: produto9 },
-    { id: 10, nome: 'Produto 10', preco: 139.90, categoria: 'camisas', imagem: produto10 },
+    // Camisas
+    { id: 1, nome: 'Camisa Xadrez Vermelha', preco: 49.90, categoria: 'camisas', imagem: produto1 },
+    { id: 2, nome: 'Camisa Longa Cinza', preco: 59.90, categoria: 'camisas', imagem: produto2 },
+    { id: 3, nome: 'Camisa Longa Preta', preco: 69.90, categoria: 'camisas', imagem: produto3 },
+    { id: 4, nome: 'Camisa Polo Azul', preco: 79.90, categoria: 'camisas', imagem: produto4 },
+    { id: 5, nome: 'Camisa Polo Vermelha', preco: 89.90, categoria: 'camisas', imagem: produto5 },
+    { id: 6, nome: 'Camisa Regata Branca', preco: 99.90, categoria: 'camisas', imagem: produto6 },
+    { id: 7, nome: 'Camisa Regata Branca', preco: 109.90, categoria: 'camisas', imagem: produto7 },
+    { id: 8, nome: 'Camisa Social Azul', preco: 119.90, categoria: 'camisas', imagem: produto8 },
+    { id: 9, nome: 'Camisa Social Branca', preco: 129.90, categoria: 'camisas', imagem: produto9 },
+    { id: 10, nome: 'Camisa Xadrez Azul', preco: 139.90, categoria: 'camisas', imagem: produto10 },
 
-    { id: 11, nome: 'Produto 11', preco: 149.90, categoria: 'calcas', imagem: produto11 },
-    { id: 12, nome: 'Produto 12', preco: 159.90, categoria: 'calcas', imagem: produto12 },
-    { id: 13, nome: 'Produto 13', preco: 169.90, categoria: 'calcas', imagem: produto13 },
-    { id: 14, nome: 'Produto 14', preco: 179.90, categoria: 'calcas', imagem: produto14 },
-    { id: 15, nome: 'Produto 15', preco: 189.90, categoria: 'calcas', imagem: produto15 },
-    { id: 16, nome: 'Produto 16', preco: 199.90, categoria: 'calcas', imagem: produto16 },
-    { id: 17, nome: 'Produto 17', preco: 209.90, categoria: 'calcas', imagem: produto17 },
-    { id: 18, nome: 'Produto 18', preco: 219.90, categoria: 'calcas', imagem: produto18 },
-    { id: 19, nome: 'Produto 19', preco: 229.90, categoria: 'calcas', imagem: produto19 },
-    { id: 20, nome: 'Produto 20', preco: 239.90, categoria: 'calcas', imagem: produto20 },
+    // Calças
+    { id: 11, nome: 'Calça Chino Marrom', preco: 149.90, categoria: 'calcas', imagem: produto11 },
+    { id: 12, nome: 'Calça Chino Bege', preco: 159.90, categoria: 'calcas', imagem: produto12 },
+    { id: 13, nome: 'Calça Jeans Escura', preco: 169.90, categoria: 'calcas', imagem: produto13 },
+    { id: 14, nome: 'Calça Jogger Cinza', preco: 179.90, categoria: 'calcas', imagem: produto14 },
+    { id: 15, nome: 'Calça Jogger Preta', preco: 189.90, categoria: 'calcas', imagem: produto15 },
+    { id: 16, nome: 'Calça Moletom Cinza', preco: 199.90, categoria: 'calcas', imagem: produto16 },
+    { id: 17, nome: 'Calça Moletom Preta', preco: 209.90, categoria: 'calcas', imagem: produto17 },
+    { id: 18, nome: 'Calça Social Cinza', preco: 219.90, categoria: 'calcas', imagem: produto18 },
+    { id: 19, nome: 'Calça Social Preta', preco: 229.90, categoria: 'calcas', imagem: produto19 },
+    { id: 20, nome: 'Calça Jeans Clara', preco: 239.90, categoria: 'calcas', imagem: produto20 },
 
-    { id: 21, nome: 'Produto 21', preco: 249.90, categoria: 'casacos', imagem: produto21 },
-    { id: 22, nome: 'Produto 22', preco: 259.90, categoria: 'casacos', imagem: produto22 },
-    { id: 23, nome: 'Produto 23', preco: 269.90, categoria: 'casacos', imagem: produto23 },
-    { id: 24, nome: 'Produto 24', preco: 279.90, categoria: 'casacos', imagem: produto24 },
-    { id: 25, nome: 'Produto 25', preco: 289.90, categoria: 'casacos', imagem: produto25 },
-    { id: 26, nome: 'Produto 26', preco: 299.90, categoria: 'casacos', imagem: produto26 },
-    { id: 27, nome: 'Produto 27', preco: 309.90, categoria: 'casacos', imagem: produto27 },
-    { id: 28, nome: 'Produto 28', preco: 319.90, categoria: 'casacos', imagem: produto28 },
-    { id: 29, nome: 'Produto 29', preco: 329.90, categoria: 'casacos', imagem: produto29 },
-    { id: 30, nome: 'Produto 30', preco: 339.90, categoria: 'casacos', imagem: produto30 },
+    // Casacos
+    { id: 21, nome: 'Jaqueta Corta Vento Azul', preco: 249.90, categoria: 'casacos', imagem: produto21 },
+    { id: 22, nome: 'Jaqueta Corta Vento Preta', preco: 259.90, categoria: 'casacos', imagem: produto22 },
+    { id: 23, nome: 'Jaqueta de Couro Marrom', preco: 269.90, categoria: 'casacos', imagem: produto23 },
+    { id: 24, nome: 'Jaqueta de Couro Preta', preco: 279.90, categoria: 'casacos', imagem: produto24 },
+    { id: 25, nome: 'Blazer Cinza', preco: 289.90, categoria: 'casacos', imagem: produto25 },
+    { id: 26, nome: 'Blazer Preto', preco: 299.90, categoria: 'casacos', imagem: produto26 },
+    { id: 27, nome: 'Moletom Cinza', preco: 309.90, categoria: 'casacos', imagem: produto27 },
+    { id: 28, nome: 'Moletom Preto', preco: 319.90, categoria: 'casacos', imagem: produto28 },
+    { id: 29, nome: 'Sobretudo Marrom', preco: 329.90, categoria: 'casacos', imagem: produto29 },
+    { id: 30, nome: 'Sobretudo Preto', preco: 339.90, categoria: 'casacos', imagem: produto30 },
 
-    { id: 31, nome: 'Produto 31', preco: 349.90, categoria: 'acessorios', imagem: produto31 },
-    { id: 32, nome: 'Produto 32', preco: 359.90, categoria: 'acessorios', imagem: produto32 },
-    { id: 33, nome: 'Produto 33', preco: 369.90, categoria: 'acessorios', imagem: produto33 },
-    { id: 34, nome: 'Produto 34', preco: 379.90, categoria: 'acessorios', imagem: produto34 },
-    { id: 35, nome: 'Produto 35', preco: 389.90, categoria: 'acessorios', imagem: produto35 },
-    { id: 36, nome: 'Produto 36', preco: 399.90, categoria: 'acessorios', imagem: produto36 },
-    { id: 37, nome: 'Produto 37', preco: 409.90, categoria: 'acessorios', imagem: produto37 },
-    { id: 38, nome: 'Produto 38', preco: 419.90, categoria: 'acessorios', imagem: produto38 },
-    { id: 39, nome: 'Produto 39', preco: 429.90, categoria: 'acessorios', imagem: produto39 },
-    { id: 40, nome: 'Produto 40', preco: 439.90, categoria: 'acessorios', imagem: produto40 },
+    // Acessórios
+    { id: 31, nome: 'Boné Azul', preco: 349.90, categoria: 'acessorios', imagem: produto31 },
+    { id: 32, nome: 'Boné Cinza', preco: 359.90, categoria: 'acessorios', imagem: produto32 },
+    { id: 33, nome: 'Carteira de Couro Marrom', preco: 369.90, categoria: 'acessorios', imagem: produto33 },
+    { id: 34, nome: 'Carteira de Couro Preta', preco: 379.90, categoria: 'acessorios', imagem: produto34 },
+    { id: 35, nome: 'Cinto Marrom', preco: 389.90, categoria: 'acessorios', imagem: produto35 },
+    { id: 36, nome: 'Cinto Preto', preco: 399.90, categoria: 'acessorios', imagem: produto36 },
+    { id: 37, nome: 'Mochila Preta', preco: 409.90, categoria: 'acessorios', imagem: produto37 },
+    { id: 38, nome: 'Mochila Vermelha', preco: 419.90, categoria: 'acessorios', imagem: produto38 },
+    { id: 39, nome: 'Relógio Prata', preco: 429.90, categoria: 'acessorios', imagem: produto39 },
+    { id: 40, nome: 'Relógio Preto', preco: 439.90, categoria: 'acessorios', imagem: produto40 },
 
-    { id: 41, nome: 'Produto 41', preco: 449.90, categoria: 'calcados', imagem: produto41 },
-    { id: 42, nome: 'Produto 42', preco: 459.90, categoria: 'calcados', imagem: produto42 },
-    { id: 43, nome: 'Produto 43', preco: 469.90, categoria: 'calcados', imagem: produto43 },
-    { id: 44, nome: 'Produto 44', preco: 479.90, categoria: 'calcados', imagem: produto44 },
-    { id: 45, nome: 'Produto 45', preco: 489.90, categoria: 'calcados', imagem: produto45 },
-    { id: 46, nome: 'Produto 46', preco: 499.90, categoria: 'calcados', imagem: produto46 },
-    { id: 47, nome: 'Produto 47', preco: 509.90, categoria: 'calcados', imagem: produto47 },
-    { id: 48, nome: 'Produto 48', preco: 519.90, categoria: 'calcados', imagem: produto48 },
-    { id: 49, nome: 'Produto 49', preco: 529.90, categoria: 'calcados', imagem: produto49 },
-    { id: 50, nome: 'Produto 50', preco: 539.90, categoria: 'calcados', imagem: produto50 },
+    // Calçados
+    { id: 41, nome: 'Bota Marrom', preco: 449.90, categoria: 'calcados', imagem: produto41 },
+    { id: 42, nome: 'Bota Preta', preco: 459.90, categoria: 'calcados', imagem: produto42 },
+    { id: 43, nome: 'Chinelo Branco', preco: 469.90, categoria: 'calcados', imagem: produto43 },
+    { id: 44, nome: 'Chinelo Preto', preco: 479.90, categoria: 'calcados', imagem: produto44 },
+    { id: 45, nome: 'Tênis Branco', preco: 489.90, categoria: 'calcados', imagem: produto45 },
+    { id: 46, nome: 'Tênis Cinza', preco: 499.90, categoria: 'calcados', imagem: produto46 },
+    { id: 47, nome: 'Tênis Preto', preco: 509.90, categoria: 'calcados', imagem: produto47 },
+    { id: 48, nome: 'Sapato Social Branco', preco: 519.90, categoria: 'calcados', imagem: produto48 },
+    { id: 49, nome: 'Sapato Social Marrom', preco: 529.90, categoria: 'calcados', imagem: produto49 },
+    { id: 50, nome: 'Sapato Social Preto', preco: 539.90, categoria: 'calcados', imagem: produto50 },
   ];
 
   const produtosFiltrados = categoriaSelecionada === 'todos'
