@@ -3,9 +3,9 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../styles/Produtos.css';
 
-// Importando arrays de produtos
-import { produtosMasculinos } from '../data/produtosMasculinos';
-import { produtosFemininos } from '../data/produtosFemininos'; // Quando tiver pronto
+// Importando arrays de produtos da mesma pasta
+import { produtosMasculinos } from './produtosMasculinos';
+import { produtosFemininos } from './produtosFemininos';
 
 function Produtos() {
   const [categoriaSelecionada, setCategoriaSelecionada] = useState('todos');
