@@ -75,7 +75,7 @@ export const produtosFemininos = [
   { id: 24, nome: 'Lenço Colorido', preco: 329.90, categoria: 'acessorios', imagem: acessorio7 },
   { id: 25, nome: 'Óculos de Sol', preco: 339.90, categoria: 'acessorios', imagem: acessorio8 },
   { id: 26, nome: 'Relógio Feminino Prata', preco: 349.90, categoria: 'acessorios', imagem: acessorio9 },
-  { id: 27, nome: 'Relógio Feminino Preto', preco: 359.90, categoria: 'acessorios', imagem: acessorio10 },
+  { id: 27, nome: 'Relógio Feminino Branco', preco: 359.90, categoria: 'acessorios', imagem: acessorio10 },
   { id: 28, nome: 'Pulseira Dourada', preco: 369.90, categoria: 'acessorios', imagem: acessorio11 },
   { id: 29, nome: 'Pulseira Prata', preco: 379.90, categoria: 'acessorios', imagem: acessorio12 },
 
