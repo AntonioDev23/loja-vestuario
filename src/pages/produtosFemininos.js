@@ -86,7 +86,7 @@ export const produtosFemininos = [
   { id: 33, nome: 'Tênis Branco', preco: 419.90, categoria: 'calcados', imagem: calcado4 },
   { id: 34, nome: 'Tênis Preto', preco: 429.90, categoria: 'calcados', imagem: calcado5 },
   { id: 35, nome: 'Bota Marrom', preco: 439.90, categoria: 'calcados', imagem: calcado6 },
-  { id: 36, nome: 'Bota Preta', preco: 449.90, categoria: 'calcados', imagem: calcado7 },
+  { id: 36, nome: 'Bota inverno', preco: 449.90, categoria: 'calcados', imagem: calcado7 },
   { id: 37, nome: 'Chinelo Branco', preco: 459.90, categoria: 'calcados', imagem: calcado8 },
   { id: 38, nome: 'Chinelo Preto', preco: 469.90, categoria: 'calcados', imagem: calcado9 },
   { id: 39, nome: 'Sapato Social Branco', preco: 479.90, categoria: 'calcados', imagem: calcado10 },
