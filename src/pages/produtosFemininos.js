@@ -58,19 +58,20 @@ import calcado10 from '../assets/imagens2/tenis-rosa.png';
 
 // ✅ Exportando os produtos organizados
 export const produtosFemininos = [
-  // Blusas
-  { id: 1, nome: 'Blazer Preto', preco: 89.90, categoria: 'blusas', genero: 'feminino', imagem: blusa1 },
-  { id: 2, nome: 'Blazer Bege', preco: 99.90, categoria: 'blusas', genero: 'feminino', imagem: blusa2 },
-  { id: 3, nome: 'Blusa Amarela', preco: 59.90, categoria: 'blusas', genero: 'feminino', imagem: blusa3 },
-  { id: 4, nome: 'Blusa Verde', preco: 59.90, categoria: 'blusas', genero: 'feminino', imagem: blusa4 },
-  { id: 5, nome: 'Blusa Xadrez Rosa', preco: 69.90, categoria: 'blusas', genero: 'feminino', imagem: blusa5 },
-  { id: 6, nome: 'Camisa Branca', preco: 49.90, categoria: 'blusas', genero: 'feminino', imagem: blusa6 },
-  { id: 7, nome: 'Camisa Polo', preco: 79.90, categoria: 'blusas', genero: 'feminino', imagem: blusa7 },
-  { id: 8, nome: 'Camisa Preta', preco: 59.90, categoria: 'blusas', genero: 'feminino', imagem: blusa8 },
-  { id: 9, nome: 'Camisa Regata', preco: 39.90, categoria: 'blusas', genero: 'feminino', imagem: blusa9 },
-  { id: 10, nome: 'Cropped Azul', preco: 49.90, categoria: 'blusas', genero: 'feminino', imagem: blusa10 },
-  { id: 11, nome: 'Cropped Rosa', preco: 49.90, categoria: 'blusas', genero: 'feminino', imagem: blusa11 },
-  { id: 12, nome: 'Blusa Regata Listrada', preco: 54.90, categoria: 'blusas', genero: 'feminino', imagem: blusa12 },
+  // Blusas (corrigido para categoria: 'camisas')
+{ id: 1, nome: 'Blazer Preto', preco: 89.90, categoria: 'camisas', genero: 'feminino', imagem: blusa1 },
+{ id: 2, nome: 'Blazer Bege', preco: 99.90, categoria: 'camisas', genero: 'feminino', imagem: blusa2 },
+{ id: 3, nome: 'Blusa Amarela', preco: 59.90, categoria: 'camisas', genero: 'feminino', imagem: blusa3 },
+{ id: 4, nome: 'Blusa Verde', preco: 59.90, categoria: 'camisas', genero: 'feminino', imagem: blusa4 },
+{ id: 5, nome: 'Blusa Xadrez Rosa', preco: 69.90, categoria: 'camisas', genero: 'feminino', imagem: blusa5 },
+{ id: 6, nome: 'Camisa Branca', preco: 49.90, categoria: 'camisas', genero: 'feminino', imagem: blusa6 },
+{ id: 7, nome: 'Camisa Polo', preco: 79.90, categoria: 'camisas', genero: 'feminino', imagem: blusa7 },
+{ id: 8, nome: 'Camisa Preta', preco: 59.90, categoria: 'camisas', genero: 'feminino', imagem: blusa8 },
+{ id: 9, nome: 'Camisa Regata', preco: 39.90, categoria: 'camisas', genero: 'feminino', imagem: blusa9 },
+{ id: 10, nome: 'Cropped Azul', preco: 49.90, categoria: 'camisas', genero: 'feminino', imagem: blusa10 },
+{ id: 11, nome: 'Cropped Rosa', preco: 49.90, categoria: 'camisas', genero: 'feminino', imagem: blusa11 },
+{ id: 12, nome: 'Blusa Regata Listrada', preco: 54.90, categoria: 'camisas', genero: 'feminino', imagem: blusa12 },
+
 
   // Calças
   { id: 13, nome: 'Calça Jeans Clara', preco: 129.90, categoria: 'calcas', genero: 'feminino', imagem: calca1 },
