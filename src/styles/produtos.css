@@ -63,55 +63,52 @@
   transform: translateY(-5px);
 }
 
-/* ===== GRADE DE PRODUTOS ===== */
+/* === Layout dos produtos === */
 .produtos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
-  justify-content: center; /* Centraliza os cards */
-  justify-items: center;   /* Centraliza o conteúdo dentro das colunas */
-  align-items: start;
-  width: 100%;
-  max-width: 1200px;       /* Largura máxima */
-  margin: 0 auto;          /* Centraliza horizontalmente */
-  padding: 0 20px;         /* Um respiro nas laterais */
+  margin: 40px auto;
+  max-width: 1200px;
 }
 
 .produto-card {
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  background-color: #fff;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
   padding: 15px;
+  background-color: #fff;
   text-align: center;
-  width: 230px; /* cards padronizados */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.2s ease-in-out;
 }
 
 .produto-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Imagens quadradas e proporcionais */
+/* Imagens quadradas */
 .produto-card img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover; /* corta sem distorcer */
-  border-radius: 10px;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
   margin-bottom: 10px;
 }
 
+/* Títulos e preços */
 .produto-card h3 {
   font-size: 1.1rem;
-  color: #333;
-  margin: 5px 0;
+  color: #6A006A;
+  margin: 8px 0;
 }
 
 .produto-card p {
+  color: #333;
   font-size: 1rem;
-  color: #555;
   margin-bottom: 10px;
 }
+
 
 /* Botão comprar */
 .produto-card button {

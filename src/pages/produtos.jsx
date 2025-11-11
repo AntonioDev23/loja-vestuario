@@ -51,7 +51,7 @@ function Produtos() {
       </div>
 
       {/* Lista de produtos */}
-      <div className="produtos-container">
+      <div className="produtos-grid">
         {produtosFiltrados().map(produto => (
           <div key={produto.id} className="produto-card">
             <img src={produto.imagem} alt={produto.nome} />
