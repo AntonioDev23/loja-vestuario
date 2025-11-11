@@ -37,31 +37,54 @@
   box-shadow: 0 5px 15px rgba(139, 0, 139, 0.4);
 }
 
-/* ===== FILTROS DE CATEGORIA ===== */
+//* ===== FILTROS (Gênero e Categoria) ===== */
 .filtros {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 40px;
+  align-items: center;
+  gap: 15px;
+  margin: 30px 0;
 }
 
-.filtros button {
+/* ===== FILTROS (Centralizados e estilizados) ===== */
+.filtros {
+  display: flex;
+  justify-content: center;  /* Centraliza horizontalmente */
+  align-items: center;      /* Alinha verticalmente */
+  flex-wrap: wrap;          /* Garante que fiquem lado a lado mesmo em telas menores */
+  gap: 15px;
+  margin: 30px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.filtros select {
   padding: 10px 18px;
   border: 2px solid #8B008B;
-  background-color: transparent;
-  color: #8B008B;
   border-radius: 8px;
-  font-weight: 500;
+  background-color: #fff;
+  color: #8B008B;
+  font-size: 1rem;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  font-weight: 500;
 }
 
-.filtros button:hover {
+.filtros select:hover,
+.filtros select:focus {
   background-color: #8B008B;
   color: #fff;
-  transform: translateY(-5px);
+  transform: translateY(-3px);
 }
+
+.filtros option {
+  background-color: #fff;
+  color: #8B008B;
+  font-weight: 500;
+}
+
+
 
 /* === Layout dos produtos === */
 .produtos-grid {
