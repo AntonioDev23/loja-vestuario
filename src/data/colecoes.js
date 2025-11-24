@@ -2,11 +2,16 @@
 import { produtosMasculinos } from '../pages/produtosMasculinos';
 import { produtosFemininos } from '../pages/produtosFemininos';
 
+import masculina from "../assets/imagens3/masculina.jpg";
+import feminina from "../assets/imagens3/feminina.jpg";
+import esportiva from "../assets/imagens3/esportiva.jpg";
+import inverno from "../assets/imagens3/inverno.jpg";
+
 export const colecoes = [
   {
     id: 'streetwear',
     nome: 'Streetwear',
-    banner: '/assets/banners/streetwear.jpg', 
+    banner: masculina,  
     descricao: 'Estilo urbano, ousado e atual.',
     produtos: [
       produtosMasculinos[0],
@@ -20,7 +25,7 @@ export const colecoes = [
   {
     id: 'inverno-2025',
     nome: 'Inverno 2025',
-    banner: '/assets/banners/inverno.jpg',
+    banner: inverno,  
     descricao: 'Casacos, botas e looks quentes para o frio.',
     produtos: [
       produtosMasculinos[5],
@@ -34,7 +39,7 @@ export const colecoes = [
   {
     id: 'verao-2025',
     nome: 'Verão 2025',
-    banner: '/assets/banners/verao.jpg',
+    banner: feminina,  
     descricao: 'Cores fortes e roupas leves para o calor.',
     produtos: [
       produtosMasculinos[15],
@@ -47,7 +52,7 @@ export const colecoes = [
   {
     id: 'esporte-performance',
     nome: 'Esporte & Performance',
-    banner: '/assets/banners/esporte.jpg',
+    banner: esportiva,  
     descricao: 'Roupas leves e resistentes para alta performance.',
     produtos: [
       produtosMasculinos[20],
