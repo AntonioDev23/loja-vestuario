@@ -1,0 +1,57 @@
+.colecao-banner {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.colecao-detalhe-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.colecao-detalhe-titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.colecao-produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.colecao-produto-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 10px;
+  text-align: center;
+  transition: transform .2s;
+}
+
+.colecao-produto-card:hover {
+  transform: translateY(-6px);
+}
+
+.colecao-produto-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.colecao-produto-nome {
+  margin: 10px 0 4px;
+  font-weight: bold;
+}
+
+.colecao-produto-preco {
+  color: #0057ff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
