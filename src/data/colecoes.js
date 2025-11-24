@@ -1,35 +1,61 @@
-// Importando banners (4 imagens do Pexels)
-import streetwearBanner from '../assets/banners/streetwear.jpg';
-import invernoBanner from '../assets/banners/inverno.jpg';
-import veraoBanner from '../assets/banners/verao.jpg';
-import esporteBanner from '../assets/banners/esporte.jpg';
-
-// Aqui você coloca os IDs dos produtos que já existem
-// Exemplo: 1,2,3,4 etc (produtos masculinos/femininos)
+// src/data/colecoes.js
+import { produtosMasculinos } from '../pages/produtosMasculinos';
+import { produtosFemininos } from '../pages/produtosFemininos';
 
 export const colecoes = [
   {
-    id: 1,
-    nome: "Streetwear",
-    banner: streetwearBanner,
-    produtos: [1, 5, 8, 12, 20, 23] // IDs reais seus
+    id: 'streetwear',
+    nome: 'Streetwear',
+    banner: '/assets/banners/streetwear.jpg', 
+    descricao: 'Estilo urbano, ousado e atual.',
+    produtos: [
+      produtosMasculinos[0],
+      produtosMasculinos[1],
+      produtosMasculinos[2],
+      produtosFemininos[0],
+      produtosFemininos[1],
+      produtosFemininos[2],
+    ]
   },
   {
-    id: 2,
-    nome: "Inverno 2025",
-    banner: invernoBanner,
-    produtos: [2, 6, 9, 11, 15, 30]
+    id: 'inverno-2025',
+    nome: 'Inverno 2025',
+    banner: '/assets/banners/inverno.jpg',
+    descricao: 'Casacos, botas e looks quentes para o frio.',
+    produtos: [
+      produtosMasculinos[5],
+      produtosMasculinos[6],
+      produtosMasculinos[7],
+      produtosFemininos[10],
+      produtosFemininos[11],
+      produtosFemininos[12],
+    ]
   },
   {
-    id: 3,
-    nome: "Verão 2025",
-    banner: veraoBanner,
-    produtos: [3, 7, 10, 13, 18, 25]
+    id: 'verao-2025',
+    nome: 'Verão 2025',
+    banner: '/assets/banners/verao.jpg',
+    descricao: 'Cores fortes e roupas leves para o calor.',
+    produtos: [
+      produtosMasculinos[15],
+      produtosMasculinos[16],
+      produtosFemininos[15],
+      produtosFemininos[16],
+      produtosFemininos[17],
+    ]
   },
   {
-    id: 4,
-    nome: "Esporte & Performance",
-    banner: esporteBanner,
-    produtos: [4, 14, 17, 19, 22, 28]
+    id: 'esporte-performance',
+    nome: 'Esporte & Performance',
+    banner: '/assets/banners/esporte.jpg',
+    descricao: 'Roupas leves e resistentes para alta performance.',
+    produtos: [
+      produtosMasculinos[20],
+      produtosMasculinos[21],
+      produtosMasculinos[22],
+      produtosFemininos[20],
+      produtosFemininos[21],
+      produtosFemininos[22],
+    ]
   }
 ];
