@@ -3,15 +3,13 @@ import { useParams } from "react-router-dom";
 import { colecoes } from "../data/colecoes";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import "../styles/colecaodetalhes.css";
+import "../styles/colecoesdetalhes.css"; 
 
 function ColecaoDetalhe() {
   const { id } = useParams();
 
-  // Agora funciona
   const colecao = colecoes.find(c => c.id === id);
 
-  // Os produtos já estão dentro da coleção
   const produtosDaColecao = colecao.produtos;
 
   return (
