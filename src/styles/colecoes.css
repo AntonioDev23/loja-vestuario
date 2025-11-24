@@ -1,0 +1,58 @@
+/* ===================================
+   ESTILOS DA LISTA DE COLEÇÕES
+   (arquivo: colecoes.js)
+=================================== */
+
+.colecoes-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Título */
+.colecoes-titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: left; /* mantém alinhado à esquerda */
+}
+
+/* Grid organizado */
+.colecoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+/* Card */
+.colecao-card {
+  width: 240px;
+  border-radius: 12px;
+  padding: 12px;
+  background: #f8f8f8;
+  transition: transform .3s, box-shadow .3s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.colecao-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Imagem */
+.colecao-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Nome */
+.colecao-nome {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
