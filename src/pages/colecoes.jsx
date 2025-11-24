@@ -5,29 +5,30 @@ import Footer from '../components/Footer';
 import '../styles/colecoes.css';
 import { Link } from 'react-router-dom';
 
-
 function Colecoes() {
   return (
-    <div>
+    <div className="page-colecoes">
       <Navbar />
 
-      <h1 className="titulo-colecoes">Coleções</h1>
+      <main className="colecoes">
+        <h2 className="colecoes-titulo">Coleções</h2>
 
-      <div className="colecoes-container">
-        {colecoes.map(c => (
-          <div key={c.id} className="colecao-card">
-            <img src={c.banner} alt={c.nome} className="colecao-banner" />
-            
-            <h2>{c.nome}</h2>
+        <div className="colecoes-container">
+          {colecoes.map(c => (
+            <div key={c.id} className="colecao-item">
+              {/* use a própria URL/variável c.banner (se for import) */}
+              <img src={c.banner} alt={c.nome} className="colecao-banner" />
 
-            <p>Descubra as peças selecionadas especialmente para essa coleção.</p>
+              <h3 className="colecao-nome">{c.nome}</h3>
+              <p className="colecao-desc">{c.descricao}</p>
 
-            <Link to={`/colecao/${c.id}`} className="btn-ver">
-              Ver coleção
-            </Link>
-          </div>
-        ))}
-      </div>
+              <Link to={`/colecao/${c.id}`} className="btn-ver">
+                Ver coleção
+              </Link>
+            </div>
+          ))}
+        </div>
+      </main>
 
       <Footer />
     </div>

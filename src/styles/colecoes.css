@@ -1,55 +1,89 @@
-/* ======== SEÇÃO COLEÇÕES ======== */
+/* reset pequeno para evitar heranças inesperadas */
+.page-colecoes { box-sizing: border-box; }
+
+/* container principal que limita largura e centraliza */
 .colecoes {
   width: 100%;
-  max-width: 1100px;
-  margin: 60px auto;
-  padding: 0 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 16px;
 }
 
-/* TÍTULO centralizado corretamente */
-.colecoes h2 {
+/* título centralizado e com espaço */
+.colecoes-titulo {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   color: #1a1a1a;
   font-weight: 700;
   width: 100%;
 }
 
-/* GRID das coleções alinhado */
+/* grid flex responsivo com gap */
 .colecoes-container {
   display: flex;
+  gap: 22px;
   justify-content: center;
-  gap: 25px;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-/* ITEM */
+/* cada card de coleção */
 .colecao-item {
-  width: 240px;       /* controla o tamanho final das imagens */
-  text-align: center; /* centraliza descrição */
+  width: 260px;              /* largura fixa para consistência */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
 }
 
-/* IMAGENS — AGORA EM FORMATO RETANGULAR */
-.colecao-item img {
+/* imagem com proporção retangular e object-fit */
+.colecao-banner {
   width: 100%;
-  height: 180px;       /* FIXA ALTURA RETANGULAR */
-  object-fit: cover;   /* garante corte bonito */
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  transition: .3s ease;
+  height: 160px;            /* altura fixa para impedir imagens enormes */
+  object-fit: cover;        /* garante corte proporcional */
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  transition: transform .25s ease, box-shadow .25s ease;
 }
 
-/* HOVER */
-.colecao-item:hover img {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+/* efeito hover */
+.colecao-item:hover .colecao-banner {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
 }
 
-/* DESCRIÇÃO */
-.colecao-item p {
-  margin-top: 10px;
-  font-size: 1.1rem;
+/* nome, descrição e botão */
+.colecao-nome {
+  font-size: 1.05rem;
+  margin: 4px 0 0;
+  color: #2a2a2a;
+  font-weight: 700;
+}
+
+.colecao-desc {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 6px 0 10px;
+  min-height: 40px; /* mantém cards com altura parecida */
+}
+
+/* botão simples (estilize para combinar com o site) */
+.btn-ver {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background-color: #8B008B; /* cor roxa padrão do site */
+  color: #fff;
+  text-decoration: none;
   font-weight: 600;
-  color: #333;
+  transition: background-color .15s ease, transform .12s ease;
 }
+
+.btn-ver:hover {
+  background-color: #6A006A;
+  transform: translateY(-2px);
+}
+
+
