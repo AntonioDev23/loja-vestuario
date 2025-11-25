@@ -106,3 +106,25 @@
 .navbar-icons .icon:hover {
   transform: scale(1.2); /* efeito de zoom ao passar o mouse */
 }
+
+
+.cart-icon-wrapper {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  pointer-events: none;
+}
