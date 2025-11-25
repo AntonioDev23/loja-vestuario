@@ -14,7 +14,7 @@
   text-align: center;
   font-size: 2rem;
   margin-bottom: 28px;
-  color: #1a1a1a;
+  color:  #8B008B;
   font-weight: 700;
   width: 100%;
 }
@@ -40,9 +40,10 @@
 
 /* imagem com proporção retangular e object-fit */
 .colecao-banner {
-  width: 100%;
-  height: 160px;            /* altura fixa para impedir imagens enormes */
-  object-fit: cover;        /* garante corte proporcional */
+  width: 100%;          /* mantém a largura do container */
+  height: 300px;        /* aumenta a altura para mostrar mais da imagem */
+  object-fit: cover;    /* mantém proporção e cobre o espaço */
+  object-position: top; /* garante que o topo da imagem fique visível */
   border-radius: 10px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
   transition: transform .25s ease, box-shadow .25s ease;
