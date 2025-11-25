@@ -114,17 +114,11 @@
 
 .cart-badge {
   position: absolute;
-  top: -6px;
-  right: -10px;
-  background-color: red;
+  top: -5px;
+  right: -8px;
+  background: red;
   color: white;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 2px 6px;
   font-size: 12px;
-  font-weight: bold;
-  pointer-events: none;
+  border-radius: 50%;
 }
