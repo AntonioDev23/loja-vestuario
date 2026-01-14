@@ -6,10 +6,10 @@ import { CartProvider } from "./context/cartcontext";
 import './styles/index.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Carrinho from './pages/carrinho';
-import Produtos from './pages/Produtos';
+import Carrinho from './pages/carrinho'; // ✅ minúsculo
+import Produtos from './pages/produtos';
 import Colecoes from './pages/colecoes';
-import ColecaoDetalhes from './pages/colecoesdetalhes'; // ✔ AQUI CORRIGIDO
+import ColecaoDetalhes from './pages/colecoesdetalhes';
 
 function App() {
   return (
@@ -29,4 +29,5 @@ function App() {
 }
 
 export default App;
+
 

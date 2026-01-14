@@ -1,16 +1,26 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import { colecoes } from "../data/colecoes";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import "../styles/colecoesdetalhes.css"; 
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import { colecoes } from '../data/colecoes';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import '../styles/colecoesdetalhes.css';
 
-function ColecaoDetalhe() {
+function ColecaoDetalhes() {
   const { id } = useParams();
 
   const colecao = colecoes.find(c => c.id === id);
 
-  const produtosDaColecao = colecao.produtos;
+  if (!colecao) {
+    return (
+      <>
+        <Navbar />
+        <div style={{ padding: '40px', textAlign: 'center' }}>
+          <h2>Coleção não encontrada</h2>
+        </div>
+        <Footer />
+      </>
+    );
+  }
 
   return (
     <div>
@@ -22,7 +32,7 @@ function ColecaoDetalhe() {
       </div>
 
       <div className="produtos-colecao">
-        {produtosDaColecao.map(produto => (
+        {colecao.produtos.map(produto => (
           <div key={produto.id} className="produto-card">
             <img src={produto.imagem} alt={produto.nome} />
             <h3>{produto.nome}</h3>
@@ -36,4 +46,5 @@ function ColecaoDetalhe() {
   );
 }
 
-export default ColecaoDetalhe;
+export default ColecaoDetalhes;
+

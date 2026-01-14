@@ -6,17 +6,9 @@ import { ShoppingCart } from 'lucide-react';
 import { useCart } from '../context/cartcontext';
 
 function Carrinho() {
-  const {
-    carrinho,
-    removerDoCarrinho,
-    diminuirQuantidade,
-    adicionarAoCarrinho
-  } = useCart();
+  const { carrinho, removerDoCarrinho, diminuirQuantidade, adicionarAoCarrinho } = useCart();
 
-  const total = carrinho.reduce(
-    (sum, item) => sum + item.preco * item.quantidade,
-    0
-  );
+  const total = carrinho.reduce((sum, item) => sum + item.preco * item.quantidade, 0);
 
   return (
     <div className="cart-page">
@@ -27,12 +19,12 @@ function Carrinho() {
 
         {carrinho.length === 0 ? (
           <div className="cart-empty">
-            <ShoppingCart className="cart-icon animated" size={80} />
+            <ShoppingCart className="cart-icon" size={80} />
             <p>Seu carrinho está vazio.</p>
           </div>
         ) : (
           <div className="cart-items">
-            {carrinho.map((item) => (
+            {carrinho.map(item => (
               <div className="cart-item" key={item.id}>
                 <img src={item.imagem} alt={item.nome} />
 
@@ -47,10 +39,7 @@ function Carrinho() {
                   </div>
                 </div>
 
-                <button
-                  className="remove-btn"
-                  onClick={() => removerDoCarrinho(item.id)}
-                >
+                <button className="remove-btn" onClick={() => removerDoCarrinho(item.id)}>
                   Remover
                 </button>
               </div>
